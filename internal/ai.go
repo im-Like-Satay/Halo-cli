@@ -4,12 +4,31 @@ import (
 	"context"
 	"fmt"
 	"log"
+	"os"
+	"strings"
 
 	"github.com/charmbracelet/glamour"
 	"google.golang.org/genai"
 )
 
+func getAPIKey() string {
+	data, err := os.ReadFile(".config")
+	if err == nil {
+		key := strings.TrimSpace(string(data))
+		if key != "" {
+			return key
+		}
+	}
+
+	return os.Getenv("GEMINI_API_KEY")
+}
+
 func CallAI(inputPrompt string) {
+	apiKey := getAPIKey()
+	if apiKey == "" {
+		log.Fatal("Error: No API Key found. run: halo set <your_api_key>")
+	}
+
 	ctx := context.Background()
 
 	client, err := genai.NewClient(ctx, &genai.ClientConfig{

@@ -13,31 +13,22 @@ Filosofi dari "Halo" sendiri adalah kesederhanaan.
 - cukup paste apikey gemini anda lalu gunakan "Halo" sesuka hati ❤️.
 
 ## Instalasi Cepat
-1. Clone repo "Halo".
 ```bash
-git clone https://github.com/im-Like-Satay/Halo-cli 
-
+git clone https://github.com/im-Like-Satay/Halo-cli
 cd Halo-cli 
-```
-2. Konfigurasi gemini apikey di `Halo-cli/internal/ai.go` pada baris 16, paste apikey Gemini anda di bagian ini. Ganti <paste_apikey_here> dengan api Gemini anda.
-```go
-  APIKey: "<paste_apikey_here>",
-```
-3. Install dependensi
-```bash
 go mod tidy
+
+# Windows
+go build -o halo.exe .
+
+# Linux / macOS
+go build -o halo .
+
+# Set API Key 
+halo set <apikey>
 ```
 
-4. Build Halo
-```bash
-# Windows
-go build -o halo.exe
-# Linux
-go build -o halo
-```
-Sekarang "Halo" siap digunakan
-## Penggunaan
-Cukup gunakan seperti ini.
+## Usage
 ```bash
 halo "apa itu golang"
 ```
@@ -47,8 +38,8 @@ halo "apa itu golang"
 <img width=500 src="image/ss-two.png" alt="Glamour example">
 
 ## TODO
-- konfigurasi yang lebih mudah.
-- instalasi yang lebih mudah.
+[✅] konfigurasi yang lebih mudah.
+[ ] instalasi yang lebih mudah.
 
 ## Lisensi
 MIT

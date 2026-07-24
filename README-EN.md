@@ -1,9 +1,9 @@
 # Halo 
 <img width=300 src=image/halo.png alt="Halo Logo" />
 
-"Halo" is a simple and fast CLI-based AI chat that fully supports the Gemini AI ecosystem. Written in Go.
+"Halo" is a simple and fast CLI-based AI chat, and fully supports the Gemini AI ecosystem. Written in Go.
 
-**Indonesia version** [here](README-EN.md)
+**English version** [here](README-EN.md)
 
 ## Philosophy
 The philosophy of "Halo" itself is simplicity.
@@ -13,31 +13,22 @@ The philosophy of "Halo" itself is simplicity.
 - just paste your Gemini API key and use "Halo" as you like ❤️.
 
 ## Quick Installation
-1. Clone the "Halo" repo.
 ```bash
-git clone https://github.com/im-Like-Satay/Halo-cli 
-
+git clone https://github.com/im-Like-Satay/Halo-cli
 cd Halo-cli 
-```
-2. Configure the Gemini API key in `Halo-cli/internal/ai.go` on line 16, paste your Gemini API key in this section. Replace <paste_apikey_here> with your Gemini API.
-```go
-  APIKey: "<paste_apikey_here>",
-```
-3. Install dependencies
-```bash
 go mod tidy
+
+# Windows
+go build -o halo.exe .
+
+# Linux / macOS
+go build -o halo .
+
+# Set API Key 
+halo set <apikey>
 ```
 
-4. Build Halo
-```bash
-# Windows
-go build -o halo.exe
-# Linux
-go build -o halo
-```
-Now "Halo" is ready to use
 ## Usage
-Just use it like this.
 ```bash
 halo "apa itu golang"
 ```
@@ -47,8 +38,8 @@ halo "apa itu golang"
 <img width=500 src="image/ss-two.png" alt="Glamour example">
 
 ## TODO
-- very simple config.
-- very simple install.
+[✅] easier configuration.
+[ ] easier installation.
 
 ## License
 MIT
