@@ -32,7 +32,7 @@ func CallAI(inputPrompt string) {
 	ctx := context.Background()
 
 	client, err := genai.NewClient(ctx, &genai.ClientConfig{
-		APIKey: "<paste_apikey_here>",
+		APIKey: apiKey,
 	})
 	if err != nil {
 		log.Fatalf("failed to create client: %v", err)
