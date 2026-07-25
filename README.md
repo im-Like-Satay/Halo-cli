@@ -28,6 +28,8 @@ go build -o halo .
 halo set <apikey>
 ```
 
+**Atau Download Binary [Di sini](https://github.com/im-Like-Satay/Halo-cli/releases)**
+
 ## Usage
 ```bash
 halo "apa itu golang"
@@ -39,7 +41,7 @@ halo "apa itu golang"
 
 ## TODO
 [✅] konfigurasi yang lebih mudah.
-[ ] instalasi yang lebih mudah.
+[✅] instalasi yang lebih mudah.
 
 ## Lisensi
 MIT

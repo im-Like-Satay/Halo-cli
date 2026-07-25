@@ -28,6 +28,8 @@ go build -o halo .
 halo set <apikey>
 ```
 
+**Or Download Binary [Here](https://github.com/im-Like-Satay/Halo-cli/releases)**
+
 ## Usage
 ```bash
 halo "apa itu golang"
@@ -39,7 +41,7 @@ halo "apa itu golang"
 
 ## TODO
 [✅] easier configuration.
-[ ] easier installation.
+[✅] easier installation.
 
 ## License
 MIT
