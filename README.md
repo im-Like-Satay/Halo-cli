@@ -1,6 +1,17 @@
 # Halo 
 <img width=300 src=image/halo.png alt="Halo Logo" />
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI-Gemini_3.5-8E7CC3?style=for-the-badge&logo=googlegemini&logoColor=white" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" />
+</p>
+
+
+[![Go Version](https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat-square&logo=go)](https://go.dev)
+[![Gemini AI](https://img.shields.io/badge/Gemini-3.5_Flash--Lite-8E7CC3?style=flat-square&logo=googlegemini)](https://aistudio.google.com)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+
 "Halo" adalah sebuah ai chat berbasis CLI sederhana dan cepat, serta mendukung penuh ekosistem Gemini AI. Ditulis menggunakan bahasa Go.
 
 **English version** [here](README-EN.md)
