@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"strings"
 
 	"github.com/charmbracelet/glamour"
@@ -12,10 +13,17 @@ import (
 )
 
 func getAPIKey() string {
-	data, err := os.ReadFile(".config")
+	ex, err := os.Executable()
+	if err != nil {
+		return os.Getenv("GEMINI_API_KEY")
+	}
+
+	filePath := filepath.Join(filepath.Dir(ex), ".config")
+
+	apiKey, err := os.ReadFile(filePath)
 	if err == nil {
-		key := strings.TrimSpace(string(data))
-		if key != "" {
+		key := strings.TrimSpace(string(apiKey))
+		if key == "" {
 			return key
 		}
 	}

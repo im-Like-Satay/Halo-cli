@@ -34,6 +34,9 @@ var setCmd = &cobra.Command{
 	Short: "Set Gemini apikey",
 	Run: func(cmd *cobra.Command, args []string) {
 		apiKey := args[0]
+		if apiKey == "" {
+			fmt.Println("Missing API Key")
+		}
 
 		err := os.WriteFile(".config", []byte(apiKey), 0600)
 		if err != nil {
