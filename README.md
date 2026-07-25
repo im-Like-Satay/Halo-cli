@@ -1,5 +1,7 @@
 # Halo 
-<img width=300 src=image/halo.png alt="Halo Logo" />
+<div align=center>
+  <img width=300 src=image/halo.png alt="Halo Logo" />
+<div/>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
