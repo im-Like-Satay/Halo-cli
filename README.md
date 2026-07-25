@@ -12,7 +12,7 @@
 
 <div align=center>
 
-[![Go Version](https://img.shields.io/badge/Go-1.22+-00ADD8?style=flat-square&logo=go)](https://go.dev)
+[![Go Version](https://img.shields.io/badge/Go-1.26+-00ADD8?style=flat-square&logo=go)](https://go.dev)
 [![Gemini AI](https://img.shields.io/badge/Gemini-3.5_Flash--Lite-8E7CC3?style=flat-square&logo=googlegemini)](https://aistudio.google.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 </div>
