@@ -32,6 +32,11 @@ Filosofi dari "Halo" sendiri adalah kesederhanaan.
 
 ## Instalasi Cepat
 ```bash
+go install -v https://github.com/im-Like-Satay/Halo-cli@latest
+```
+
+## Bangun dari sumber
+```bash
 git clone https://github.com/im-Like-Satay/Halo-cli
 cd Halo-cli 
 go mod tidy

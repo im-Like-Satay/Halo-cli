@@ -32,6 +32,11 @@ The philosophy of "Halo" itself is simplicity.
 
 ## Quick Installation
 ```bash
+go install -v https://github.com/im-Like-Satay/Halo-cli@latest
+```
+
+## Build from source
+```bash
 git clone https://github.com/im-Like-Satay/Halo-cli
 cd Halo-cli 
 go mod tidy
