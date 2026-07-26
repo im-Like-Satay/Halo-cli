@@ -23,7 +23,7 @@ func getAPIKey() string {
 	apiKey, err := os.ReadFile(filePath)
 	if err == nil {
 		key := strings.TrimSpace(string(apiKey))
-		if key == "" {
+		if key != "" {
 			return key
 		}
 	}

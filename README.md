@@ -47,6 +47,8 @@ halo set <apikey>
 ```
 
 **Atau Download Binary [Di sini](https://github.com/im-Like-Satay/Halo-cli/releases)**
+**Note**
+> Untuk yang binary mungkin tidak stabil atau bisa dibilang banyak bug, disarankan untuk build sendiri karena versi dari clone lebih sering mendapatkan perbaikan bug dari versi binary.  
 
 ## Usage
 ```bash
@@ -56,10 +58,6 @@ halo "apa itu golang"
 ## Screenshot
 <img width=500 src="image/ss-one.png" alt="Glamour example">
 <img width=500 src="image/ss-two.png" alt="Glamour example">
-
-## TODO
-[✅] konfigurasi yang lebih mudah.
-[✅] instalasi yang lebih mudah.
 
 ## Lisensi
 MIT

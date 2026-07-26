@@ -47,6 +47,8 @@ halo set <apikey>
 ```
 
 **Or Download Binary [Here](https://github.com/im-Like-Satay/Halo-cli/releases)**
+**Note**
+> The binary version may be unstable or prone to bugs; building from source is recommended, as the cloned version receives bug fixes more frequently than the binary version.
 
 ## Usage
 ```bash
