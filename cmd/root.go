@@ -29,9 +29,13 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "halo [prompt]",
-	Short: "Simple AI Chat CLI Build With Go.",
-	Args:  cobra.MinimumNArgs(1),
+	Use:                   "halo [prompt]",
+	Short:                 "Simple AI Chat CLI Build With Go.",
+	DisableFlagsInUseLine: true,
+	CompletionOptions: cobra.CompletionOptions{
+		DisableDefaultCmd: true,
+	},
+	Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		internal.CallAI(args[0])
 	},

@@ -31,6 +31,7 @@ import (
 var setCmd = &cobra.Command{
 	Use:   "set [apikey]",
 	Short: "Set Gemini apikey",
+	Args:  cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		apiKey := args[0]
 		if apiKey == "" {
